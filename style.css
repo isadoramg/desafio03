@@ -1,0 +1,254 @@
+/* https://www.wix.com/templatespt/animalclinic-pt */
+
+*{
+    margin:0;padding:0;scroll-behavior: smooth;box-sizing: border-box;overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+#navHeader{
+    background-color: #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    text-align: right;
+    padding: 0 12.5%;
+    color: orangered;
+}
+#navbar{
+    background-color: #fafafadd;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    /*display: flex;
+    flex-direction: row;*/
+    text-align: center;
+    padding: 2% 12.5% 0 12.5%;
+    /*height: 64px;*/
+}
+#navbar *{
+    text-decoration: none;
+    color: #000000dd;
+}
+.navWrapper{
+    padding: 2.5% 0;
+}
+.navWrapper>a{
+    float: left;
+    font-size: 2em;
+}
+#navbar .links{
+    float: right;
+    width: 75%;
+    margin-right: -5.5em;
+    padding: 1% 0;
+}
+.links a{
+    margin: 1%;
+}
+
+#section1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 0;
+    background-image: url('https://coolhdwall.com/storage/202101/russian-blue-cat-4K-wallpaper-pc-preview.jpg');
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sidebarS1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 105.5vh;
+    background-color: #cccccc88;
+    padding: 75% 10% 20% 37.5%;
+}
+.mainS1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.sidebarS1 h1{
+    font-size: 3em;
+    margin-bottom: 20%;
+    font-weight: 300;
+}
+.sidebarS1 p{
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-bottom: 10%;
+}
+button{
+    width: 100%;
+    background-color: orangered;
+    border: none;
+    font-weight: 300;
+    color:white;
+    padding: .25em;
+    font-size: 1.1em;
+}
+.parentS1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    color: #000000aa;
+}
+.mainS1-item{
+    padding: 5%;
+    padding-left: 15%;
+}
+
+.sidebarS1.services{
+    padding-top: 10%;
+}
+.sidebarS1.services h1{
+    line-height: 1em;
+    overflow: hidden;
+}
+.parentS1 h2{
+    font-weight: 500;
+}
+.parentS1 h2::before{
+    content: '>';
+    position: absolute;
+    margin-left: -.75em;
+    font-size: 2em;
+    margin-top: -.35em;
+    color: rgb(31, 156, 197)
+}
+.parentS1 p{
+    color: #000000dd;
+    margin-top: 1em;
+}
+
+#section2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://static.wixstatic.com/media/84770f_26b5d1b44900477d83db240758ae827c.png/v1/fill/w_1311,h_589,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_26b5d1b44900477d83db240758ae827c.png');
+}
+#section2 .sidebarS1{
+    height: auto;
+    grid-column-start: 0;
+    grid-column-end: 2;
+    padding-top: 32%;
+    background-color: transparent;
+}
+#section2 .mainS1{
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 15%;
+    background-color: transparent;
+}
+#section2 p{
+    margin-bottom: 5%
+}
+
+#section3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#section3 .mainS1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: #cccccc88;
+}
+#section3 .sidebarS1{
+    height: auto;
+    padding-top: 20%;
+    background-color: #fff;
+}
+.topleft{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10%;
+    padding-top: 20%;
+}
+.topleft p, .topright p{
+    font-weight: 200;
+    margin: 1em 0;
+}
+.topright{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10%;
+    padding-top: 20%;
+}
+.mapa{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0 15% 0 5%;
+    overflow: hidden;
+}
+.contato{
+    padding: 5%;
+    padding-right: 15%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+}
+#section3 h3, h2{
+    font-weight: 500;
+    color: #000000dd;
+}
+.contato input{
+    width: 100%;
+    float: left;
+    padding: 1ch;
+    display: block;
+    margin:4px;
+    border:none;
+}
+.contato textarea{
+    width: 100%;
+    float: right;
+    display: block;
+    height: 16ch;
+    border:none;
+    padding: 1ch;
+}
+.contato h2{
+    margin-left: 4px;
+}
+.contato button{
+    width: 35%;
+    float: right;
+    display: block;
+    margin-top:8px;
+    font-size: .9em;
+}
+.contatoLeft{
+    width: 50%;
+    float:left;
+}
+.contatoRight{
+    width: 50%;
+    float:right;
+    padding: 4px 1%;
+}
+footer .blue{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 156, 197);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding-top: 1%;
+}
+footer .copy{
+    background-color: #cccccc88;
+    color: black;
+    padding: 1% 10%;
+    font-weight: 200;
+}
